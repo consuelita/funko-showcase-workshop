@@ -20,6 +20,9 @@ const FunkoCard: React.FC<FunkoProps> = ({ funkos, setFunkos }) => {
               image={funko.imageUrl}
               alt={funko.character}
             />
+            <CardContent>
+              <Typography gutterBottom variant="h2" component="div" sx={{fontSize: '2em', fontWeight: 'bold'}}>{funko.source}</Typography>
+            </CardContent>
 
             {/* Add the Card code here */}
             {/* Add the EditFunkoButton component here */}
