@@ -75,6 +75,7 @@ export default function Home({
         <SearchBar setSearch={setSearch} />
 
         {/* Insert code for Add Button component here */}
+        <AddFunkoButton setFunkos={setFunkos} />
 
         <main>
           <Box display="grid" gridTemplateColumns="repeat(3, 1fr)" gap={4}>
