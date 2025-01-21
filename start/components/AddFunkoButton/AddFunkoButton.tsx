@@ -35,7 +35,7 @@ const AddFunkoButton = ({ setFunkos }: { setFunkos: React.Dispatch<React.SetStat
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '10px' }}>
 
       {/* Code to create Add Button functionality goes here */}
-
+      
     </div>
   );
 };

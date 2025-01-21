@@ -50,11 +50,22 @@ const EditFunkoButton = ({ setFunkos, funko }: { setFunkos: React.Dispatch<React
         <DialogContent>
 
           {/* Add Text Fields here */}
+          <TextField margin="normal" name="" label="" type="" fullWidth value={funko.character} onChange={handleInputChange}/>
+          <TextField margin="normal" name="" label="" type="" fullWidth value={funko.imageUrl} onChange={handleInputChange}/>
+          <TextField margin="normal" name="" label="" type="" fullWidth value={funko.numberInLine} onChange={handleInputChange}/>
+          <TextField margin="normal" name="" label="" type="" fullWidth value={funko.yearReleased} onChange={handleInputChange}/>
+          <TextField margin="normal" name="" label="" type="" fullWidth value={funko.source} onChange={handleInputChange}/>
 
         </DialogContent>
         <DialogActions>
 
           {/* Add Buttons here */}
+          <Button onClick={handleClose} color="secondary">
+            Cancel
+          </Button>
+          <Button onClick={handleSubmit} color="primary">
+            Submit
+          </Button>
 
         </DialogActions>
       </Dialog>
