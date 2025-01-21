@@ -50,11 +50,11 @@ const EditFunkoButton = ({ setFunkos, funko }: { setFunkos: React.Dispatch<React
         <DialogContent>
 
           {/* Add Text Fields here */}
-          <TextField margin="normal" name="" label="" type="" fullWidth value={funko.character} onChange={handleInputChange}/>
-          <TextField margin="normal" name="" label="" type="" fullWidth value={funko.imageUrl} onChange={handleInputChange}/>
-          <TextField margin="normal" name="" label="" type="" fullWidth value={funko.numberInLine} onChange={handleInputChange}/>
-          <TextField margin="normal" name="" label="" type="" fullWidth value={funko.yearReleased} onChange={handleInputChange}/>
-          <TextField margin="normal" name="" label="" type="" fullWidth value={funko.source} onChange={handleInputChange}/>
+          <TextField margin="normal" name="" label="character" type="" fullWidth value={funko.character} onChange={handleInputChange}/>
+          <TextField margin="normal" name="" label="imageUrl" type="" fullWidth value={funko.imageUrl} onChange={handleInputChange}/>
+          <TextField margin="normal" name="" label="numberInLine" type="" fullWidth value={funko.numberInLine} onChange={handleInputChange}/>
+          <TextField margin="normal" name="" label="yearReleased" type="" fullWidth value={funko.yearReleased} onChange={handleInputChange}/>
+          <TextField margin="normal" name="" label="source" type="" fullWidth value={funko.source} onChange={handleInputChange}/>
 
         </DialogContent>
         <DialogActions>
