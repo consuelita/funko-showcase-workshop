@@ -26,6 +26,7 @@ const FunkoCard: React.FC<FunkoProps> = ({ funkos, setFunkos }) => {
               <Typography variant="body2" color="text.secondary">Released: {funko.yearReleased}</Typography>
               <Typography variant="body2" color="text.secondary">Number in Line: {funko.numberInLine}</Typography>
             </CardContent>
+            <EditFunkoButton funko={funko} setFunkos={setFunkos} />
 
             {/* Add the Card code here */}
             {/* Add the EditFunkoButton component here */}
