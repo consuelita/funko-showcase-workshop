@@ -44,11 +44,11 @@ const AddFunkoButton = ({ setFunkos }: { setFunkos: React.Dispatch<React.SetStat
           Enter Details
         </DialogTitle>
         <DialogContent>
-          <TextField margin="normal" name="" label="character" type="" fullWidth value={""} onChange={handleInputChange}/>
-          <TextField margin="normal" name="" label="imageUrl" type="" fullWidth value={""} onChange={handleInputChange}/>
-          <TextField margin="normal" name="" label="numberInLine" type="" fullWidth value={""} onChange={handleInputChange}/>
-          <TextField margin="normal" name="" label="yearReleased" type="" fullWidth value={""} onChange={handleInputChange}/>
-          <TextField margin="normal" name="" label="source" type="" fullWidth value={""} onChange={handleInputChange}/>
+          <TextField margin="normal" name="Character" label="Character" type="text" fullWidth value={formValues.character} onChange={handleInputChange}/>
+          <TextField margin="normal" name="Image Url" label="Image Url" type="url" fullWidth value={formValues.imageUrl} onChange={handleInputChange}/>
+          <TextField margin="normal" name="Number in Line" label="Number in Line" type="number" fullWidth value={formValues.numberInLine} onChange={handleInputChange}/>
+          <TextField margin="normal" name="Year Released" label="Year Released" type="number" fullWidth value={formValues.yearReleased} onChange={handleInputChange}/>
+          <TextField margin="normal" name="Source" label="Source" type="text" fullWidth value={formValues.source} onChange={handleInputChange}/>
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="secondary">
