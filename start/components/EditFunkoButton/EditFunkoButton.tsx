@@ -42,7 +42,7 @@ const EditFunkoButton = ({ setFunkos, funko }: { setFunkos: React.Dispatch<React
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '10px' }}>
-      <Button variant="contained" color="secondary" onClick={handleClickOpen}>
+      <Button variant="contained" color="error" onClick={handleClickOpen}>
         Edit
       </Button>
       <Dialog open={open} onClose={handleClose}>

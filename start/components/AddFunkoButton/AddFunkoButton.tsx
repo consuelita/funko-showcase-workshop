@@ -35,7 +35,30 @@ const AddFunkoButton = ({ setFunkos }: { setFunkos: React.Dispatch<React.SetStat
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '10px' }}>
 
       {/* Code to create Add Button functionality goes here */}
-      
+      <Button variant="contained" color="secondary" onClick={handleClickOpen}>
+        Add Funko!
+      </Button>
+
+      <Dialog open={open} onClose={handleClose}>
+        <DialogTitle>
+          Enter Details
+        </DialogTitle>
+        <DialogContent>
+          <TextField margin="normal" name="" label="character" type="" fullWidth value={""} onChange={handleInputChange}/>
+          <TextField margin="normal" name="" label="imageUrl" type="" fullWidth value={""} onChange={handleInputChange}/>
+          <TextField margin="normal" name="" label="numberInLine" type="" fullWidth value={""} onChange={handleInputChange}/>
+          <TextField margin="normal" name="" label="yearReleased" type="" fullWidth value={""} onChange={handleInputChange}/>
+          <TextField margin="normal" name="" label="source" type="" fullWidth value={""} onChange={handleInputChange}/>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose} color="secondary">
+            Cancel
+          </Button>
+          <Button onClick={handleSubmit} color="primary">
+            Submit
+          </Button>
+        </DialogActions>
+      </Dialog>
     </div>
   );
 };
